@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -17,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Series" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSq-cd-gYH">
-                                <rect key="frame" x="169.5" y="60" width="75.5" height="33.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIKit Series" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSq-cd-gYH">
+                                <rect key="frame" x="137" y="60" width="140" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gTb-Ez-seG">
-                                <rect key="frame" x="16" y="154.5" width="382" height="691.5"/>
+                                <rect key="frame" x="16" y="154" width="382" height="692"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="CKL-RW-hjF">
                                     <size key="itemSize" width="253" height="128"/>
@@ -85,7 +86,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gTb-Ez-seG" secondAttribute="bottom" constant="16" id="cwM-o0-1Sd"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gTb-Ez-seG" secondAttribute="trailing" constant="16" id="jfa-Ak-9V8"/>
                             <constraint firstItem="gTb-Ez-seG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="rnx-Hb-hlF"/>
-                            <constraint firstItem="gTb-Ez-seG" firstAttribute="top" secondItem="DSq-cd-gYH" secondAttribute="bottom" constant="61" id="zv6-vp-Iqh"/>
+                            <constraint firstItem="gTb-Ez-seG" firstAttribute="top" secondItem="DSq-cd-gYH" secondAttribute="bottom" constant="60" id="zv6-vp-Iqh"/>
                         </constraints>
                     </view>
                     <connections>

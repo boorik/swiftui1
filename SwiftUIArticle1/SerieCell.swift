@@ -19,6 +19,7 @@ class SerieCell: UICollectionViewCell {
         button.setTitle("Move to top", for: .normal)
         button.addTarget(self, action: #selector(onClick), for: .touchUpInside)
     }
+    
     @objc private func onClick() {
         guard let serie = title.text else {
             return

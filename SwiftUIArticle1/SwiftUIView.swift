@@ -23,24 +23,31 @@ struct SwiftUIView: View {
 
     var body: some View {
         VStack(spacing: .zero) {
-            Text("Series")
+            Text("SwiftUI Series")
                 .font(.title)
-            Spacer()
-                ForEach(data, id: \.self) { text in
-                    VStack(spacing: .zero) {
-                        HStack(spacing: .zero) {
-                            Text(text)
+                .padding(.bottom, 60)
+            ScrollView {
+                LazyVStack(spacing: .zero) {
+                    ForEach(data, id: \.self) { text in
+                        VStack(spacing: .zero) {
                             Spacer()
-                            Button(action: {
-                                moveToTop(text)
-                            }, label: {
-                                Text("Move to top")
-                            })
+                            HStack(spacing: .zero) {
+                                Text(text)
+                                Spacer()
+                                Button(action: {
+                                    moveToTop(text)
+                                }, label: {
+                                    Text("Move to top")
+                                        .font(.system(size: 15))
+                                })
+                            }
+                            Spacer()
+                            Divider()
                         }
-                        .padding(.vertical, 16)
-                        Divider()
+                        .frame(height: 50)
                     }
                 }
+            }
             Spacer()
         }
         .padding(16)
